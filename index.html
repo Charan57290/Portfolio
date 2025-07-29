@@ -6,6 +6,11 @@
   <title>Charan's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
@@ -14,10 +19,26 @@
   <!-- ======== NAVBAR ======== -->
    
   <header class="header">
-    <a href="#" class="logo transition-transform duration-300 hover:scale-110 hover:text-cyan-400">
-  Charan
-</a>
+<div class="flex items-center space-x-2 cursor-pointer transition-transform duration-300 hover:scale-110"
+     onclick="window.open('resume.pdf', '_blank')">
+  
+  <!-- Logo Image -->
+  <img src="a.png" alt="KC Logo" class="w-8 h-8 rounded-sm shadow-md" />
 
+  <!-- Name "Charan" -->
+<h1 class="text-3xl text-white" style="font-family: 'Pacifico', cursive;">
+  Charan
+</h1>
+
+</div>
+
+
+    <button 
+  onclick="window.open('resume.pdf', '_blank')" 
+  class="bg-cyan-500 text-white px-5 py-2 rounded-md shadow-md hover:bg-cyan-600 hover:scale-105 transition-transform duration-300"
+>
+  📄 Resume
+</button>
     <nav class="navbar">
   <a href="#home" class="transition-transform duration-300 hover:scale-110 hover:text-cyan-400">Home</a>
   <a href="#about" class="transition-transform duration-300 hover:scale-110 hover:text-cyan-400">About</a>
@@ -43,13 +64,13 @@
       <h3>And I'm a <span class="multiple-text"></span></h3>
       <p>Welcome to my personal portfolio website.</p>
      <div class="social-media flex gap-5">
-  <a href="#" class="transition-transform duration-300 hover:scale-125 hover:text-cyan-400">
+  <a href="https://linkedin.com/in/thota-mohana-naga-venkata-kalicharan-4828392a2/" class="transition-transform duration-300 hover:scale-125 hover:text-cyan-400">
     <i class="bx bxl-linkedin text-2xl"></i>
   </a>
-  <a href="#" class="transition-transform duration-300 hover:scale-125 hover:text-cyan-400">
+  <a href="https://github.com/Charan57290" class="transition-transform duration-300 hover:scale-125 hover:text-cyan-400">
     <i class="bx bxl-github text-2xl"></i>
   </a>
-  <a href="#" class="transition-transform duration-300 hover:scale-125 hover:text-cyan-400">
+  <a href="https://www.instagram.com/charan_handles/" class="transition-transform duration-300 hover:scale-125 hover:text-cyan-400">
     <i class="bx bxl-instagram text-2xl"></i>
   </a>
 </div>
@@ -200,21 +221,21 @@
       <div class="project-icon">🌐</div>
       <h3>Custom Browser</h3>
       <p>A lightweight, customizable browser built with security and speed in mind.</p>
-      <a href="#" class="project-btn">🔗 View Project</a>
+      <a href="https://github.com/Charan57290/Custom-browser.git" class="project-btn">🔗 View Project</a>
     </div>
 
     <div class="project-card creative-card">
       <div class="project-icon">🚦</div>
       <h3>Road Surveillance & Alerts</h3>
       <p>Smart traffic monitoring system with real-time emergency alerts.</p>
-      <a href="#" class="project-btn">🔗 View Project</a>
+      <a href="https://github.com/YIZHUSTC/InsightDE.git" class="project-btn">🔗 View Project</a>
     </div>
 
     <div class="project-card creative-card">
       <div class="project-icon">📄</div>
       <h3>Research Paper</h3>
       <p>Study on file management systems in Real-Time Operating Systems (RTOS).</p>
-      <a href="#" class="project-btn">🔗 Read Paper</a>
+      <a href="https://drive.google.com/file/d/1DWDINf94WjP29Auis9iivNe608uZnfiO/view?usp=drive_link" class="project-btn">🔗 Read Paper</a>
     </div>
   </div>
 </section>
@@ -250,30 +271,48 @@
 
   <!-- 📮 Contact Form -->
 <div class="max-w-xl mx-auto px-4">
-  <form action="https://formsubmit.co/thota.kalicharan@gmail.com" method="POST" class="space-y-4">
-    <input type="text" name="name" placeholder="Your Name" required
-      class="w-full p-3 rounded-md bg-white bg-opacity-10 backdrop-blur-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+  <form action="https://formsubmit.co/thota.kalicharan@gmail.com" method="POST" class="w-full space-y-4">
+  <!-- Hidden fields -->
+  <input type="hidden" name="_next" value="https://Charan57290.github.io/Portfolio/thankyou.html">
+  <input type="hidden" name="_captcha" value="false">
 
-    <input type="email" name="email" placeholder="Your Email" required
-      class="w-full p-3 rounded-md bg-white bg-opacity-10 backdrop-blur-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+  <!-- Name -->
+  <input 
+    type="text" 
+    name="name" 
+    placeholder="Your Name" 
+    required 
+    class="w-full p-3 rounded-lg bg-white text-black placeholder-gray-500"
+  >
 
-    <textarea name="message" placeholder="Your Message" required rows="5"
-      class="w-full p-3 rounded-md bg-white bg-opacity-10 backdrop-blur-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+  <!-- Email -->
+  <input 
+    type="email" 
+    name="email" 
+    placeholder="Your Email" 
+    required 
+    class="w-full p-3 rounded-lg bg-white text-black placeholder-gray-500"
+  >
 
-    <!-- Hidden Fields -->
-    <input type="hidden" name="_subject" value="Message from Charan's Portfolio">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="thankyou.html">
-    <input type="text" name="_honey" style="display:none">
+  <!-- Message -->
+  <textarea 
+    name="message" 
+    placeholder="Your Message" 
+    required 
+    class="w-full p-3 rounded-lg bg-white text-black placeholder-gray-500"
+    rows="4"
+  ></textarea>
 
-    <!-- Submit Button -->
-    <div class="text-center">
-      <button type="submit"
-        class="bg-cyan-500 text-white px-6 py-2 rounded-md shadow-md hover:bg-cyan-600 transition-all">
-        🚀 Send Message
-      </button>
-    </div>
-  </form>
+  <!-- Submit Button -->
+<button 
+  type="submit"
+  class="bg-cyan-500 text-white px-6 py-3 mt-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-cyan-400"
+>
+  🚀 Send Message
+</button>
+
+</form>
+
 </div>
 
 
