@@ -130,3 +130,10 @@ const contactObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 contactObserver.observe(contactSection);
+// Toggle menu on small screens
+const menuBtn = document.getElementById('menu-btn');
+const navLinks = document.getElementById('nav-links');
+
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('hidden');
+});
