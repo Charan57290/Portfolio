@@ -1707,3 +1707,74 @@ body::before {
   opacity: 1;
   pointer-events: none; /* makes sure it doesn't block clicks */
 }
+/* Base styles for mobile (default) */
+
+/* ================== Responsive ================== */
+@media (min-width: 640px) {
+  /* Small tablets and above */
+  .home-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .home-img img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Tablets and small laptops */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+
+  .thankyou {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktops */
+  .home-content {
+    flex-direction: row;
+  }
+
+  .home-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .navbar {
+    justify-content: space-evenly;
+  }
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .home {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
