@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charan's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-cover bg-center bg-no-repeat bg-fixed text-white" style="background-image: url('bg.webp');">
+
+  <!-- ======== NAVBAR ======== -->
+
+  <header class="header flex justify-between items-center px-6 py-3 bg-black bg-opacity-80 backdrop-blur-md">
+    <!-- Logo + Name -->
+    <div class="flex items-center gap-3 cursor-pointer" onclick="window.open('assets/resume.pdf', '_blank')">
+      <img src="assets/a.png" alt="KC Logo" class="w-8 h-8 rounded shadow" />
+      <h1 class="text-2xl text-white" style="font-family: 'Pacifico', cursive;">Charan</h1>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger text-white text-3xl md:hidden cursor-pointer" onclick="toggleMenu()">
+      &#9776; <!-- ☰ -->
+    </div>
+    <nav id="navbar"
+      class="navbar hidden flex-col md:flex-row absolute md:static top-16 right-6 bg-black bg-opacity-90 md:bg-transparent text-white p-4 md:p-0 rounded md:rounded-none z-50">
+      <a href="#home" class="transition-transform duration-300 hover:scale-110 hover:text-cyan-400">Home</a>
+      <a href="#about" class="transition-transform duration-300 hover:scale-110 hover:text-cyan-400">About</a>
+      <a href="#education" class="transition-transform duration-300 hover:scale-110 hover:text-cyan-400">Education</a>
+      <a href="#projects" class="transition-transform duration-300 hover:scale-110 hover:text-cyan-400">Project
+        Portfolio</a>
+      <a href="#pro-dev" class="transition-transform duration-300 hover:scale-110 hover:text-cyan-400">Professional
+        Development</a>
+      <a href="#contact" class="transition-transform duration-300 hover:scale-110 hover:text-cyan-400">Get in Touch</a>
+      <a href="#thankyou" class="transition-transform duration-300 hover:scale-110 hover:text-cyan-400">Thank You</a>
+    </nav>
+
+  </header>
+
+  <!-- ======== HOME SECTION ======== -->
+  <section class="home" id="home" class="bg-transparent">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1 class="group text-4xl  text-cyan-400 cursor-pointer transition duration-300">
+        <span class="block group-hover:hidden">Charan</span>
+        <span class="hidden group-hover:block transition duration-300">Thota Kali charan</span>
+      </h1>
+
+
+
+      <h3>And I'm a <span class="multiple-text"></span></h3>
+      <p>Welcome to my personal portfolio website.</p>
+
+      <!-- Skills Badges -->
+      <div class="flex flex-wrap gap-2 mt-4 mb-6">
+        <span
+          class="bg-cyan-500 bg-opacity-20 text-cyan-400 px-3 py-1 rounded-full border border-cyan-500 text-sm shadow-[0_0_10px_rgba(0,255,255,0.2)]">HTML/CSS</span>
+        <span
+          class="bg-cyan-500 bg-opacity-20 text-cyan-400 px-3 py-1 rounded-full border border-cyan-500 text-sm shadow-[0_0_10px_rgba(0,255,255,0.2)]">JavaScript</span>
+        <span
+          class="bg-cyan-500 bg-opacity-20 text-cyan-400 px-3 py-1 rounded-full border border-cyan-500 text-sm shadow-[0_0_10px_rgba(0,255,255,0.2)]">Python</span>
+        <span
+          class="bg-cyan-500 bg-opacity-20 text-cyan-400 px-3 py-1 rounded-full border border-cyan-500 text-sm shadow-[0_0_10px_rgba(0,255,255,0.2)]">Java</span>
+        <span
+          class="bg-cyan-500 bg-opacity-20 text-cyan-400 px-3 py-1 rounded-full border border-cyan-500 text-sm shadow-[0_0_10px_rgba(0,255,255,0.2)]">C/C++</span>
+        <span
+          class="bg-cyan-500 bg-opacity-20 text-cyan-400 px-3 py-1 rounded-full border border-cyan-500 text-sm shadow-[0_0_10px_rgba(0,255,255,0.2)]">React</span>
+      </div>
+
+      <div class="social-media flex gap-5">
+        <a href="https://www.linkedin.com/in/thota-kalicharan-4828392a2/" target="_blank"
+          class="transition-transform duration-300 hover:scale-125 hover:text-cyan-400">
+          <i class="bx bxl-linkedin text-2xl"></i>
+        </a>
+        <a href="https://github.com/Charan57290" target="_blank"
+          class="transition-transform duration-300 hover:scale-125 hover:text-cyan-400">
+          <i class="bx bxl-github text-2xl"></i>
+        </a>
+        <a href="https://www.instagram.com/charan_handles/" target="_blank"
+          class="transition-transform duration-300 hover:scale-125 hover:text-cyan-400">
+          <i class="bx bxl-instagram text-2xl"></i>
+        </a>
+      </div>
+
+      <div class="flex flex-wrap gap-4 mt-6">
+        <button id="moreBtn"
+          class="btn transform transition-transform duration-300 text-center hover:scale-110 hover:shadow-[0_8px_20px_rgba(0,255,255,0.4)]">
+          More About Me
+        </button>
+        <a href="assets/resume.pdf" target="_blank" class="btn transform transition-transform duration-300 text-center hover:scale-110 hover:shadow-[0_8px_20px_rgba(0,255,255,0.4)]">
+          Resume
+        </a>
+      </div>
+    </div>
+    <div class="home-img">
+      <img src="assets/profile.jpeg" alt="profile"
+        class="rounded-full w-88 h-85 shadow-[0_0_20px_rgba(0,255,255,0.3)] transition-transform duration-300 hover:scale-105 float-image" />
+
+    </div>
+  </section>
+
+  <!-- ======== ABOUT SECTION ======== -->
+  <div id="extra-sections" class="hidden reveal-container">
+    <section class="about section glass-card" id="about">
+      <h2 class="section-title">About Me</h2>
+
+      <hr class="line-break" />
+      <br />
+      <div class="about-container">
+
+        <!-- Intro Paragraph -->
+        <div class="intro">
+          I’m a Full Stack Developer passionate about crafting seamless, intuitive digital experiences. My core
+          strengths lie in developing scalable web applications, implementing elegant UI/UX designs, and solving complex
+          technical problems. <br><br>
+
+          I bring a versatile skill set spanning both frontend and backend technologies including HTML, CSS, JavaScript,
+          Python, Java, and C/C++. <br><br>
+
+          With hands-on experience leading team projects, conducting research, and constantly learning, I thrive in
+          dynamic environments where innovation meets practicality. Whether it's building custom solutions or optimizing
+          performance, I aim to bridge creativity with code.
+        </div>
+        <br />
+        <div class="about-fast-facts">
+          <div class="fact-box"><strong>5+</strong><span>Projects Completed</span></div>
+          <div class="fact-box"><strong>3+</strong><span>Languages Mastered</span></div>
+          <div class="fact-box"><strong>2</strong><span>Certifications Earned</span></div>
+          <div class="fact-box"><strong>1</strong><span>Research Paper Published</span></div>
+        </div>
+
+        <!-- Skill Bars -->
+        <!-- <div class="vertical-skill-bars animated-slide-up">
+      <div class="v-skill">
+        <div class="v-bar" style="height: 95%"><span>HTML</span></div>
+      </div>
+      <div class="v-skill">
+        <div class="v-bar" style="height: 90%"><span>CSS</span></div>
+      </div>
+      <div class="v-skill">
+        <div class="v-bar" style="height: 85%"><span>JavaScript</span></div>
+      </div>
+      <div class="v-skill">
+        <div class="v-bar" style="height: 80%"><span>Python</span></div>
+      </div>
+    </div> -->
+        <br />
+        <br />
+        <!-- Flip Cards for Traits -->
+        <div class="flip-card-container">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">Leadership</div>
+              <div class="flip-card-back">Led university-level projects & team collaborations</div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">Problem Solving</div>
+              <div class="flip-card-back">Enjoy debugging and logic-heavy challenges</div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">Curiosity</div>
+              <div class="flip-card-back">Continuously exploring tools, tech, and systems</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Pie Charts -->
+        <div class="skill-pies">
+          <div class="pie-chart" data-percent="95">
+            <svg>
+              <circle cx="50" cy="50" r="45" />
+            </svg>
+            <div class="pie-label">HTML</div>
+          </div>
+          <div class="pie-chart" data-percent="90">
+            <svg>
+              <circle cx="50" cy="50" r="45" />
+            </svg>
+            <div class="pie-label">CSS</div>
+          </div>
+          <div class="pie-chart" data-percent="85">
+            <svg>
+              <circle cx="50" cy="50" r="45" />
+            </svg>
+            <div class="pie-label">JS</div>
+          </div>
+          <div class="pie-chart" data-percent="80">
+            <svg>
+              <circle cx="50" cy="50" r="45" />
+            </svg>
+            <div class="pie-label">Python</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- ======== EDUCATION SECTION ======== -->
+    <section id="education" class="education-section">
+      <h2 class="section-heading">Education</h2>
+      <p class="section-subheading">My Academic Journey</p>
+
+      <div class="education-grid">
+        <div class="edu-card">
+          <h3>Little Buds High School</h3>
+          <p>Up to 10th Grade (SSC)</p>
+          <span>Eluru</span>
+
+        </div>
+
+        <div class="edu-card">
+          <h3>RGUKT</h3>
+          <p>Intermediate</p>
+          <span>IIIT-Pre University Course(PUC)</span>
+          <span>Ongole</span>
+        </div>
+
+        <div class="edu-card">
+          <h3>Lovely Professional University</h3>
+          <p>B.Tech Specilazed in Computer Science</p>
+          <span>Punjab</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======== PROJECTS SECTION ======== -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-heading">🚀 My Projects</h2>
+      <p class="section-subheading">Some of the exciting work I’ve done</p>
+
+      <div class="fp-container">
+        <!-- Project 1 -->
+        <div class="featured-project">
+          <div class="fp-content">
+            <p class="fp-subtitle">Frontend & Backend</p>
+            <h3 class="fp-title">Synthesia</h3>
+            <div class="fp-description">
+              <p>A full-stack music streaming platform designed for seamless audio playback and user playlists.</p>
+            </div>
+            <ul class="fp-tech">
+              <li>React</li>
+              <li>Node Js</li>
+              <li>MongoDB</li>
+            </ul>
+            <div class="fp-links">
+              <a href="https://github.com/Charan57290/SYNTHESIA.git" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="fp-image">
+            <a href="https://github.com/Charan57290/SYNTHESIA.git" target="_blank">
+              <img src="assets/synthesia.png" alt="Synthesia Project" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="featured-project">
+          <div class="fp-content">
+            <p class="fp-subtitle">Desktop Application</p>
+            <h3 class="fp-title">Custom Browser</h3>
+            <div class="fp-description">
+              <p>A lightweight, customizable browser built with security and speed in mind.</p>
+            </div>
+            <ul class="fp-tech">
+              <li>C++</li>
+              <li>Qt</li>
+              <li>Python</li>
+            </ul>
+            <div class="fp-links">
+              <a href="https://github.com/Charan57290/Custom-browser.git" target="_blank"><i
+                  class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="fp-image">
+            <a href="https://github.com/Charan57290/Custom-browser.git" target="_blank">
+              <img src="assets/browser.png" alt="Custom Browser" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="featured-project">
+          <div class="fp-content">
+            <p class="fp-subtitle">Software & AI</p>
+            <h3 class="fp-title">Road Surveillance & Alerts</h3>
+            <div class="fp-description">
+              <p>Smart traffic monitoring system with real-time emergency alerts.</p>
+            </div>
+            <ul class="fp-tech">
+              <li>Python</li>
+              <li>OpenCV</li>
+              <li>Machine Learning</li>
+            </ul>
+            <div class="fp-links">
+              <a href="https://github.com/YIZHUSTC/InsightDE.git" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="fp-image">
+            <a href="https://github.com/YIZHUSTC/InsightDE.git" target="_blank">
+              <img src="assets/surveillance.png" alt="Road Surveillance" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======== PROFESSIONAL DEVELOPMENT SECTION ======== -->
+    <section id="pro-dev" class="pro-dev-section animate-on-scroll">
+      <h2 class="section-heading">📈 Professional Development</h2>
+      <p class="section-subheading">Continuous learning and certifications</p>
+
+      <div class="pro-dev-grid">
+        <!-- Card 1 -->
+        <div class="pro-dev-card creative-card">
+          <div class="pro-dev-img-wrapper">
+            <img src="assets/webstack.jpg" alt="Webstack Academy" class="pd-img" />
+          </div>
+          <div class="pro-dev-content">
+            <h3>Web Development Internship</h3>
+            <span class="pro-dev-org">Webstack Academy</span>
+            <p>Completed internship training at Webstack Academy gaining hands-on experience in web development and
+              practical project building.</p>
+            <a href="https://drive.google.com/file/d/1iqQ2D960h8wi1AGRx43GhsH243JZqM4y/view?usp=sharing" target="_blank" class="pro-dev-btn">View Certificate</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="pro-dev-card creative-card">
+          <div class="pro-dev-img-wrapper">
+            <img src="assets/algo university logo.jpeg" alt="AlgoUniversity" class="pd-img" />
+          </div>
+          <div class="pro-dev-content">
+            <h3>Graph Camp</h3>
+            <span class="pro-dev-org">AlgoUniversity</span>
+            <p>Completed Graph Camp by AlgoUniversity focused on graph algorithms, problem-solving strategies, and
+              competitive programming concepts.</p>
+            <a href="https://drive.google.com/file/d/1IMslF617kmlwuxdiW6IwetLhQ3qGBtun/view?usp=sharing" target="_blank" class="pro-dev-btn">View Certificate</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="pro-dev-card creative-card">
+          <div class="pro-dev-img-wrapper">
+            <img src="assets/RTOS.jpg" alt="RTOS Research" class="pd-img" />
+          </div>
+          <div class="pro-dev-content">
+            <h3>Research Paper Publication</h3>
+            <span class="pro-dev-org">File Management in Real-Time Operating Systems</span>
+            <p>Worked on a research paper exploring file management techniques in Real-Time Operating Systems.</p>
+            <a href="https://drive.google.com/file/d/1DWDINf94WjP29Auis9iivNe608uZnfiO/view?usp=drive_link" target="_blank" class="pro-dev-btn">View Paper</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- ======== CONTACT SECTION ======== -->
+    <section id="contact" class="contact-section animate-on-scroll">
+      <h2 class="section-heading">📬 Get in Touch</h2>
+      <p class="section-subheading">I’d love to hear from you! Drop me a message or connect via socials.</p>
+
+      <!-- 📦 Contact Info Cards -->
+      <div class="contact-info">
+        <div class="info-card">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p><a href="mailto:thota.kalicharan@gmail.com">thota.kalicharan@gmail.com</a></p>
+        </div>
+
+        <div class="info-card">
+          <i class="fas fa-phone"></i>
+          <h3>Phone</h3>
+          <p><a href="tel:+918520051332">+91 85200 51332</a></p>
+        </div>
+
+        <div class="info-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Location</h3>
+          <p>India</p>
+        </div>
+      </div>
+
+      <!-- 📮 Contact Form -->
+      <div class="max-w-xl mx-auto px-4">
+        <form action="https://formsubmit.co/thota.kalicharan@gmail.com" method="POST" class="w-full space-y-4">
+          <!-- Hidden fields -->
+          <input type="hidden" name="_next" value="https://Charan57290.github.io/Portfolio/thankyou.html">
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- Name -->
+          <input type="text" name="name" placeholder="Your Name" required
+            class="w-full p-3 rounded-lg bg-white text-black placeholder-gray-500">
+
+          <!-- Email -->
+          <input type="email" name="email" placeholder="Your Email" required
+            class="w-full p-3 rounded-lg bg-white text-black placeholder-gray-500">
+
+          <!-- Message -->
+          <textarea name="message" placeholder="Your Message" required
+            class="w-full p-3 rounded-lg bg-white text-black placeholder-gray-500" rows="4"></textarea>
+
+          <!-- Submit Button -->
+          <button type="submit"
+            class="bg-cyan-500 text-white px-6 py-3 mt-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-110 hover:shadow-cyan-400">
+            🚀 Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+
+      <!-- 🌐 Social Links -->
+      <div class="social-links">
+        <a href="https://github.com/Charan57290" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/thota-kalicharan-4828392a2/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+      </div>
+    </section>
+
+
+
+    <!-- ======== THANK YOU SECTION ======== -->
+    <!-- ======== THANK YOU SECTION ======== -->
+    <section class="thankyou" id="thankyou" style="--delay: 1s;" class="bg-transparent">
+      <div class="thankyou-icon" aria-hidden="true">
+        <i class="fas fa-handshake"></i>
+      </div>
+      <h2 class="section-title text-center animate-fade-in">Thank You!</h2>
+      <div class="section-content animate-slide-up">
+        <p>Thank you for visiting my portfolio. Looking forward to connecting with you!</p>
+      </div>
+      <a href="#contact" class="btn thankyou-btn">Contact Me</a>
+    </section>
+
+
+
+    <!-- ======== FOOTER ======== -->
+    <section class="footer">
+      <p>&copy; 2025 Charan. All Rights Reserved.</p>
+    </section>
+  </div>
+  <!-- Load Typed.js first -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+  <!-- Then load your custom script -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
