@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  /* Slate & Silver Theme from Image */
+  --background: #2C3E50;
+  --foreground: #ECF0F1;
+  
+  --primary: #ECF0F1;
+  --primary-foreground: #2C3E50;
+  
+  --secondary: #34495E;
+  --secondary-foreground: #ECF0F1;
+  
+  --accent: #BDC3C7;
+  
+  --card: #34495E;
+  --card-foreground: #ECF0F1;
+  
+  --border: #7F8C8D;
+  
+  --muted: #BDC3C7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: rgba(189, 195, 199, 0.4);
+  color: #2C3E50;
+}
